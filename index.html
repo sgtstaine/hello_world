@@ -1,3 +1,27 @@
+<!Need to sort formatting>
+
+<script src="https://raw.githubusercontent.com/robflaherty/screentime/master/screentime.js"></script>
+<script>
+$.screentime({
+  fields: [
+    { selector: '#top',
+      name: 'Top'
+    },
+    { selector: '#middle',
+      name: 'Middle'
+    },
+    { selector: '#bottom',
+      name: 'Bottom'
+    }
+  ],
+  callback: function(data) {
+    console.log(data);
+    // Logs: { Top: 5, Middle: 3 }
+  }
+});
+</script>
+
+
 <span style="font-weight:400;">SpatialOS is a managed cloud service to host any synchronous multiplayer game. It is specifically designed to operate online games with new gameplay and enable developers to iterate quickly to find new gameplay that is fun.</p>
 
 <span style="font-weight:400;">The essential and core service SpatialOS provides is server hosting, and facilitating the connection of players to the game so they can play it. This is a globally hosted scalable infrastructure with regions close to all major game playing populations, enabling low latency gameplay for players of SpatialOS games. This is fully managed by Improbable so that the developer no longer needs to worry about server management. Because of this, it is easier for teams of all sizes to create online games. SpatialOS can be hosted on all major public cloud providers.</p>
