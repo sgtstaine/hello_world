@@ -15,8 +15,13 @@ $.screentime({
     }
   ],
   callback: function(data) {
-    console.log(data);
-    // Logs: { Top: 5, Middle: 3 }
+    $.each(data, function(key, val) {
+      var $elem = $('#console li[data-field="' + key + '"]');
+      var current = parseInt($elem.data('time'), 10);
+
+      $elem.data('time', current + val);
+      $elem.find('span').html(current += val);
+    });
   }
 });
 </script>
@@ -35,3 +40,4 @@ $.screentime({
 	<li style="font-weight:400;"><span style="font-weight:400;">A set of services which developers can extend to integrate/create their own workflows (i.e build systems) and integrate their own 3rd party services (e.g matchmaking, player auth etc).</span></li>
 </ul>
 <span style="font-weight:400;">Users write the logic for their game using a game engine, or in C, C++, C# or Java languages, and must integrate these applications with SpatialOS using the SpatialOS SDK. Developers also use the SDK to adapt their workflows and integrate other 3rd party services. The SDKs support all major platforms (PC,Xbox, Playstation, Mobile), and players on these different platforms can interact in the same game world. For the most part this allows users to develop games in the way they are familiar, however they will need to adhere to the SpatialOS programming paradigm and learn some basic distributed systems knowledge. We also provide first party native integrations for Unity and Unreal.</span><code></code>
+
