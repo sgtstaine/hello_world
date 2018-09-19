@@ -1,4 +1,21 @@
-<!Need to sort formatting>
+<!Need to sort formatting
+http://screentime.parsnip.io/
+https://firebase.google.com/docs/web/setup?authuser=0>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBHE0ZJ4tgsuBSRvbr8yrxhtZkrFQP9C8E",
+    authDomain: "logical-flame-194710.firebaseapp.com",
+    databaseURL: "https://logical-flame-194710.firebaseio.com",
+    projectId: "logical-flame-194710",
+    storageBucket: "logical-flame-194710.appspot.com",
+    messagingSenderId: "1038845307575"
+  };
+  firebase.initializeApp(config);
+</script>
 
 <script src="https://raw.githubusercontent.com/robflaherty/screentime/master/screentime.js"></script>
 <script>
@@ -26,7 +43,14 @@ $.screentime({
 });
 </script>
 
-
+<div id="console">
+    <ul>
+      <li data-time="0" data-field="Top">Intro: <span>390</span>s</li>
+      <li data-time="0" data-field="Middle">Main: <span>0</span>s</li>
+      <li data-time="0" data-field="Bottom">Bottom: <span>0</span>s</li>
+    </ul>
+  </div>
+  
 <span style="font-weight:400;">SpatialOS is a managed cloud service to host any synchronous multiplayer game. It is specifically designed to operate online games with new gameplay and enable developers to iterate quickly to find new gameplay that is fun.</p>
 
 <span style="font-weight:400;">The essential and core service SpatialOS provides is server hosting, and facilitating the connection of players to the game so they can play it. This is a globally hosted scalable infrastructure with regions close to all major game playing populations, enabling low latency gameplay for players of SpatialOS games. This is fully managed by Improbable so that the developer no longer needs to worry about server management. Because of this, it is easier for teams of all sizes to create online games. SpatialOS can be hosted on all major public cloud providers.</p>
@@ -40,4 +64,3 @@ $.screentime({
 	<li style="font-weight:400;"><span style="font-weight:400;">A set of services which developers can extend to integrate/create their own workflows (i.e build systems) and integrate their own 3rd party services (e.g matchmaking, player auth etc).</span></li>
 </ul>
 <span style="font-weight:400;">Users write the logic for their game using a game engine, or in C, C++, C# or Java languages, and must integrate these applications with SpatialOS using the SpatialOS SDK. Developers also use the SDK to adapt their workflows and integrate other 3rd party services. The SDKs support all major platforms (PC,Xbox, Playstation, Mobile), and players on these different platforms can interact in the same game world. For the most part this allows users to develop games in the way they are familiar, however they will need to adhere to the SpatialOS programming paradigm and learn some basic distributed systems knowledge. We also provide first party native integrations for Unity and Unreal.</span><code></code>
-
