@@ -17,7 +17,6 @@
     </script>
 
     <script type="text/javascript">
-        // THIS IS YOUR DEMO SEGMENT.COM INTEGRATION ON OUR "DEVELOPMENT" WORKSPACE
         // https://app.segment.com/improbable-dev/sources/james_taine_webdemo/overview
         //
         // Data ends up in: https://bigquery.cloud.google.com/dataset/ci-io-platform-dev:james_taine_webdemo
@@ -33,6 +32,7 @@
 
     <script>
         // https://gist.github.com/magician11/5914ae687e8494f5b4718263eef7003e
+		// https://www.google.com/?bob=john&id=123 --> Object {bob: "john", id: "123"}
         const getURLparams = () => {
           const pl = /\+/g;
           const search = /([^&=]+)=?([^&]*)/g;
@@ -93,11 +93,11 @@
         // https://segment.com/docs/sources/website/analytics.js/#identify
         analytics.identify(params['id']);
     else
-        alert("No ID on query string -- be nice");  // do something better here, hide the form or something...
+        //alert("No ID on query string -- be nice");  // do something better here, hide the form or something...
 
     // always track a segment.com page() hit, analytics.js will handle anonymous AND identified users here
     // https://segment.com/docs/sources/website/analytics.js/#page
-    analytics.page('My super special page');
+    analytics.page('Page start');
 
     $.screentime({
         fields: [
@@ -113,8 +113,8 @@
                 selector: '#bottom',
                 name: 'Bottom'
             }
-        ],
-        reportInterval: 10,
+        ],	
+        reportInterval: 1,
         callback: function (data) {
             // every tick, send segment some data of what they were looking at
             // the segment analytics library will deal with the identity.
@@ -133,5 +133,12 @@
         }
     });
 </script>
+
+<script>
+	window.onbeforeunload = function () {
+		analytics.page('Page closed')
+	};
+</script>
+
 </body>
 </html>
