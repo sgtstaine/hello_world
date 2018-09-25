@@ -50,8 +50,6 @@
     </script>
 </head>
 <body>
-<div id="console">
-</div>
 
 <div class="wrap">
     <div id="content">
@@ -91,10 +89,11 @@
 <script>
     // one time segment.com identify, pull values from querystring
     const params = getURLparams();
-    if('id' in params)
+    if('id' in params) {
         // https://segment.com/docs/sources/website/analytics.js/#identify
         analytics.identify(params['id']);
-    else
+    }
+    
         //alert("No ID on query string -- be nice");  // do something better here, hide the form or something...
 
     // always track a segment.com page() hit, analytics.js will handle anonymous AND identified users here
