@@ -122,17 +122,7 @@
             // the segment analytics library will deal with the identity.
             // https://segment.com/docs/sources/website/analytics.js/#track
             analytics.track('ScreenTime', data);
-            console.log(data);  // TODO: remove me
-
-            // update the screen - TODO: remove me
-            $.each(data, function (key, val) {
-                var $elem = $('#console li[data-field="' + key + '"]');
-                var current = parseInt($elem.data('time'), 10);
-
-                $elem.data('time', current + val);
-                $elem.find('span').html(current += val);
-            });
-        }
+    	}
     });
 </script>
 
