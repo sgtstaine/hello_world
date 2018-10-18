@@ -64,89 +64,82 @@
     <div id="content">
 	<div id="middle">
 		<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">SpatialOS is a managed cloud service to host synchronous multiplayer games. It is not licenced software.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">By managed cloud service, we mean SpatialOS  continuously improves, and users automatically benefit, without any additional costs.</span></p>
-			</li>
-			</ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">SpatialOS is suitable for any synchronous multiplayer game. By synchronous, we mean where multiple players interact in the same game world.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It can be used for games on PC, Xbox, PS4 and Mobile.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">Compared with games that exist today, it enables new gameplay, and fewer gameplay trade-offs. This enables game worlds that are much larger in size, have more players (1,000s in a single game world), have a greater number of complex AI and gameplay systems (e.g. weather, ecologies), have many physical objects and run at a higher fidelity (thus enabling new gameplay mechanics).</span></p>
 			<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">You must use SpatialOS&rsquo; networking stack, and cannot use your own</span></p>
-			</li>
-			</ul>
-			</li>
-			<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">Games can run across many game engine instances and/or servers, enabling new gameplay resulting from combinations of larger seamless worlds, more AI with greater complexity</span><span style="font-weight: 400;">, greater fidelity interactions</span><span style="font-weight: 400;">, millions of interactable objects &amp; rigid bodies, and more complex gameplay systems</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It provides networking and area of interest management (only send relevant state changes to each player), enabling 10,000&rsquo;s of players to connect to a single game world, and a higher density of players and object interactions</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">SpatialOS allows for near-instant messages within one large seamless </span><span style="font-weight: 400;">instance</span><span style="font-weight: 400;">, enabling players to see and interact with each other over larger distances</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It is trivial to add persistence elements, meaning when something happens in the game world the results of that change permanently affect the world, even when players leave the game.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It enables interaction between players and systems in different, distinct game worlds. </span><span style="font-weight: 400;">For example, players in one world could banish a daemon, causing it to reappear in another world</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It enables different platforms to play and interact in the same game world. For example, players on mobile controlling a drone to help their teammates playing on PC</span></p>
-			</li>
-			</ul>
-			</ul>
-			<p>&nbsp;</p>
-			<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It enables fast creation and testing of new games</span></p>
-			</li>
-			<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">You can deploy and test at scale quickly</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">We provide an easy way to distribute your game to players for playtests</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">We provide a service that lets you test your game&rsquo;s performance using fake players</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">We provide basic logging &amp; metrics to understand the health and performance of your deployment for devops purposes</span></p>
-			</li>
-			</ul>
-			</ul>
-			<p>&nbsp;</p>
-			<ul>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It has hosting locations in all major gaming countries around the world (including China)</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It can easily and quickly scale the amount of compute resources to match your games needs</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">You cannot use your own private servers to host the game. You can use them for ancillary services.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It does </span><span style="font-weight: 400;">not</span><span style="font-weight: 400;"> provide most ancillary services required for a game. However, it is easy to integrate your own or a 3rd party services</span><span style="font-weight: 400;">, such as player-analytics and leaderboards, with our SDKs.</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">It is not a game engine and does not provide game logic </span><span style="font-weight: 400;">(e.g. for physics, or other gameplay systems)</span><span style="font-weight: 400;">. When using SpatialOS you can use a game engine to write your game logic</span><span style="font-weight: 400;">, although SpatialOS will provide the compute to facilitate more complex systems than otherwise possible</span></p>
-			</li>
-			<li style="font-weight: 400;">
-			<p><span style="font-weight: 400;">You can integrate any game engine with SpatialOS using our SDKs, and we provide our own integration for Unity and Unreal.</span></p>
-			</li>
-		</ul>
+				<li>
+				<p>SpatialOS is a managed cloud service to host any synchronous multiplayer games. It is not licensed software.</p>
+				</li>
+				<li>
+				<p>By managed cloud service, we mean SpatialOS continuously improves, and users automatically benefit without any additional costs</p>
+				</li>
+				<li>SpatialOS is suitable for any online synchronous multiplayer game
+				<ul>
+				<li>This includes both persistent, large-scale multiplayers AND smaller, match-based arena games</li>
+				<li>It can be used for games on PC, Xbox, PS4 and Mobile (iOS and Android)</li>
+				<li>You can port in-development or live games to SpatialOS. This would enable you to grow an existing match-based shooter into a larger, 1000-player shooter, or even into a persistent MMO</li>
+				</ul>
+				</li>
+				</ul>
+				<ul>
+				<li>Games can run across many game engine instances and/or servers. This enables game worlds that are much larger in size, have more players (1,000s in a single game world), have a greater number of complex AI and gameplay systems (e.g. weather, ecologies), have many physical objects <em>and</em> run at a higher fidelity (enabling new gameplay mechanics, such as hi-fidelity combat)</li>
+				</ul>
+				<ul>
+				<li>You must use SpatialOS&rsquo; networking stack, and cannot use your own</li>
+				<li>
+				<p>It provides networking and area of interest management (only send relevant state changes to each player), enabling 10,000&rsquo;s of players to connect to a single game world, and a higher density of players and object interactions</p>
+				</li>
+				<li>
+				<p>SpatialOS allows for near-instant messages within one large seamless&nbsp;instance, enabling players to see and interact with each other over larger distances</p>
+				</li>
+				<li>
+				<p>It is trivial to add persistence elements, meaning when something happens in the game world the results of that change permanently affect the world, even when players leave the game. This data is stored in SpatialOS' scalable, in-memory database, so you do not need to add your own back-end</p>
+				<ul>
+				<li>You can mix both persistent and temporary (session-based) elements in a single game world</li>
+				</ul>
+				</li>
+				<li>
+				<p>It enables interaction between players and systems in different, distinct game worlds.&nbsp;For example, players in one world could banish a daemon, causing it to reappear in another world</p>
+				</li>
+				<li>
+				<p>It enables different platforms to play and interact in the same game world. For example, players on mobile controlling a drone to help their teammates playing on PC</p>
+				</li>
+				</ul>
+				<ul>
+				<li>
+				<p>It enables fast creation and testing of new games</p>
+				</li>
+				<ul>
+				<li>
+				<p>You can deploy and test at scale quickly</p>
+				</li>
+				<li>
+				<p>We provide an easy way to distribute your game to players for playtests (although it does not provide a commercial distribution service)</p>
+				</li>
+				<li>
+				<p>We provide a service that lets you test your game&rsquo;s performance using fake players</p>
+				</li>
+				<li>
+				<p>We provide basic logging &amp; metrics to understand the health and performance of your deployment for devops purposes</p>
+				</li>
+				</ul>
+				<li>
+				<p>It has hosting locations in all major gaming countries around the world (including China)</p>
+				</li>
+				<li>
+				<p>It can easily and quickly scale the amount of compute resources to match your games needs</p>
+				</li>
+				<li>
+				<p>You cannot use your own private servers to host the game. You can use them for ancillary services.</p>
+				</li>
+				<li>
+				<p>It does&nbsp;not&nbsp;provide most ancillary services required for a game. However, it is easy to integrate your own or a 3rd party services, such as player-analytics and leaderboards, with our SDKs.</p>
+				</li>
+				<li>
+				<p>It is not a game engine and does not provide game logic&nbsp;(e.g. for physics, or other gameplay systems). When using SpatialOS you can use a game engine to write your game logic, although SpatialOS will provide the compute to facilitate more complex systems than otherwise possible</p>
+				</li>
+				<li>
+				<p>You can integrate any game engine with SpatialOS using our SDKs, and we provide our own integration for Unity and Unreal.</p>
+				</li>
+				</ul>
         </div>
     </div>
 
